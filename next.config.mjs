@@ -9,12 +9,13 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Conditional static export for GitHub Pages
+  // For demo mode, we'll use regular build instead of static export
+  // to avoid issues with dynamic routes and API routes
   ...(process.env.NEXT_PUBLIC_DEMO_MODE === 'true' && {
-    output: 'export',
+    // Remove static export to fix build issues
+    // output: 'export',
     trailingSlash: true,
     skipTrailingSlashRedirect: true,
-    distDir: 'out',
   }),
   // Environment-specific configurations
   env: {

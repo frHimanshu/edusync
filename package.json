@@ -4,13 +4,9 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "build:demo": "NEXT_PUBLIC_DEMO_MODE=true next build",
     "dev": "next dev",
-    "dev:demo": "NEXT_PUBLIC_DEMO_MODE=true next dev",
     "lint": "next lint",
-    "start": "next start",
-    "export": "next build && next export",
-    "deploy:demo": "NEXT_PUBLIC_DEMO_MODE=true next build"
+    "start": "next start"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
